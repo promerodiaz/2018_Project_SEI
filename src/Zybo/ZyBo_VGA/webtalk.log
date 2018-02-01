@@ -1,0 +1,16 @@
+Release 14.6 - WebTalk (P.68d)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=5073469E5DEE4518A0DC08CF12A8A101
+ProjectIteration=1
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:9 - WebTalk Install setting is OFF.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - C:/sam_work/Xilinx_projects/14_6/ZyBo_VGA/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2013-09-27T16:54:27.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.6/ISE_DS/ISE/data/reports/webtalk_introduction.html

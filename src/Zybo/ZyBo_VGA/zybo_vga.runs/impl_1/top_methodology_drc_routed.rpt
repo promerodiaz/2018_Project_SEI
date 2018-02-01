@@ -1,0 +1,45 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Thu Jan 25 18:19:25 2018
+| Host         : Promero running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++----------+----------+------------------------------------------------+------------+
+| Rule     | Severity | Description                                    | Violations |
++----------+----------+------------------------------------------------+------------+
+| TIMING-6 | Warning  | No common primary clock between related clocks | 2          |
++----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_div and clk_out1_clk_div_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_div] -to [get_clocks clk_out1_clk_div_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_clk_div_1 and clk_out1_clk_div are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_clk_div_1] -to [get_clocks clk_out1_clk_div]
+Related violations: <none>
+
+

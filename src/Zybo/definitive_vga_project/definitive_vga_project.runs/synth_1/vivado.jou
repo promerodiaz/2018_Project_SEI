@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Feb  1 12:39:27 2018
+# Process ID: 10808
+# Current directory: C:/Users/user2/Documents/Vivado/definitive_vga_project/definitive_vga_project.runs/synth_1
+# Command line: vivado.exe -log definitive_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source definitive_wrapper.tcl
+# Log file: C:/Users/user2/Documents/Vivado/definitive_vga_project/definitive_vga_project.runs/synth_1/definitive_wrapper.vds
+# Journal file: C:/Users/user2/Documents/Vivado/definitive_vga_project/definitive_vga_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source definitive_wrapper.tcl -notrace

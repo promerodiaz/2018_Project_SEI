@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Jan 25 18:16:46 2018
+# Process ID: 12584
+# Current directory: C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/top.vds
+# Journal file: C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11272 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 340.777 ; gain = 97.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:42]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/realtime/clk_div_stub.v:5' bound to instance 'clk_div_inst' of component 'clk_div' [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/realtime/clk_div_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/realtime/clk_div_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'top' (2#1) [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 392.789 ; gain = 149.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 392.789 ; gain = 149.785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/dcp3/clk_div_in_context.xdc] for cell 'clk_div_inst'
+Finished Parsing XDC File [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/dcp3/clk_div_in_context.xdc] for cell 'clk_div_inst'
+Parsing XDC File [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/constrs_1/imports/XDC/ZYBO_Master.xdc]
+Finished Parsing XDC File [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/constrs_1/imports/XDC/ZYBO_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/constrs_1/imports/XDC/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 734.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 734.621 ; gain = 491.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 734.621 ; gain = 491.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_I. (constraint file  C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/dcp3/clk_div_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_I. (constraint file  C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/.Xil/Vivado-12584-Promero/dcp3/clk_div_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_div_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 734.621 ; gain = 491.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:217]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:212]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:255]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:254]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:255]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:254]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:254]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:255]
+WARNING: [Synth 8-6014] Unused sequential element box_x_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:213]
+WARNING: [Synth 8-6014] Unused sequential element box_y_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element box_cntr_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:243]
+WARNING: [Synth 8-6014] Unused sequential element h_cntr_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:266]
+WARNING: [Synth 8-6014] Unused sequential element v_cntr_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:277]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 734.621 ; gain = 491.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element h_cntr_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:266]
+WARNING: [Synth 8-6014] Unused sequential element v_cntr_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:277]
+WARNING: [Synth 8-6014] Unused sequential element box_cntr_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:243]
+WARNING: [Synth 8-6014] Unused sequential element box_y_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element box_x_reg_reg was removed.  [C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.srcs/sources_1/imports/ZyBo_VGA/top.vhd:213]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 734.621 ; gain = 491.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_div_inst/clk_out1' to pin 'clk_div_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 734.621 ; gain = 491.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 748.852 ; gain = 505.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_div_inst has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_div       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_div |     1|
+|2     |CARRY4  |    47|
+|3     |LUT1    |    13|
+|4     |LUT2    |   100|
+|5     |LUT3    |     8|
+|6     |LUT4    |    31|
+|7     |LUT5    |    13|
+|8     |LUT6    |    16|
+|9     |FDRE    |    79|
+|10    |FDSE    |    16|
+|11    |OBUF    |    18|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   343|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 750.730 ; gain = 507.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 750.730 ; gain = 165.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 750.730 ; gain = 507.727
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 750.730 ; gain = 518.371
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user2/Documents/Vivado/ZyBo_VGA/zybo_vga.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 750.730 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 25 18:17:57 2018...

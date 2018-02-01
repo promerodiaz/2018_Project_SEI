@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Feb  1 12:22:26 2018
+# Process ID: 8272
+# Current directory: C:/Users/user2/Documents/Vivado/definitive_vga_project/definitive_vga_project.runs/definitive_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log definitive_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source definitive_processing_system7_0_0.tcl
+# Log file: C:/Users/user2/Documents/Vivado/definitive_vga_project/definitive_vga_project.runs/definitive_processing_system7_0_0_synth_1/definitive_processing_system7_0_0.vds
+# Journal file: C:/Users/user2/Documents/Vivado/definitive_vga_project/definitive_vga_project.runs/definitive_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source definitive_processing_system7_0_0.tcl -notrace
